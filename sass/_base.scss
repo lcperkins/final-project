@@ -1,0 +1,38 @@
+$default-font-color: #000;
+$background-color: rgb(175, 219, 233);
+$container-bgcolor: lightblue;
+$container-bordercolor: #000;
+$textbox-bordercolor: lightgrey;
+$button-textcolor: white;
+$button-hovercolor: orange;
+$search-button-color: green;
+$header-background-color: rgb(82, 82, 82);
+
+@mixin mq($size) {
+    @media only screen and (min-width:$size) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: $default-font-color;
+    width: 100%;
+    min-height: 100%;
+    @include mq(768px) {
+        font-size: 22px;
+    }
+}
+
+body {
+    padding: 5px;
+    background-color: $background-color;
+}
+

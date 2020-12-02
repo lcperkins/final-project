@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+
+    <title>Accu4Cast</title>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="">     
+        <h1>Accu4Cast</h1>
+    </div>
+
+    <main>
+        <section class="newCitySearch">
+            <form id="cityEntryForm">
+                <label for="newCity">Search for a city</label>
+                <input id="newCity" type="text" size="5" autocomplete="off" class ="search-bar" placeholder="Enter a zip code" 
+                tabindex="0" />  
+                <button id="searchCity" type="submit" class="button" title="Search for 4cast" aria-label="Search for 4cast by zip code" 
+                tabindex="0">Get 4cast</button>
+            </form>            
+        </section>
+        <section class="location">
+            <div class="forecastZip">67601</div>
+        </section>
+        <section class="currentWeather">
+            <div class="currently">29°F</div>
+            <div class="weather">Partly Cloudy</div>
+            <div class="tempRange"> 39°F / 23°F</div>
+        </section>
+    </main>
+<script src="main.js"></script>
+</body>
+</html>
+
+
+
